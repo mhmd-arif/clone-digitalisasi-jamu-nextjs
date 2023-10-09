@@ -1,0 +1,13 @@
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+export default function DefaultLayout({ children }) {
+    return (
+        <>
+            <Navbar />
+            <div className="">{children}</div>
+            <Footer />
+        </>
+    );
+}
