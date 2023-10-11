@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 export default function DefaultLayout({ children }) {
     return (
-        <div className="font-sans">
+        <div className="bg-earth-50 font-sans w-full h-full">
             <Navbar />
-            <div className="">{children}</div>
+            <div className="h-full">{children}</div>
             <Footer />
         </div>
     );
