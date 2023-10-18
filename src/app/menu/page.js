@@ -5,7 +5,7 @@ import React from "react";
 export default function Menu() {
     return (
         <div className="bg-leaf-950 py-32 pb-12 px-16 w-screen h-full flex items-center gap-4 overflow-hidden">
-            <LinkCard href={"/simplisia"} src={"/menu/simplisia.png"}>
+            <LinkCard href={"/bahan"} src={"/menu/simplisia.png"}>
                 <span className="tracking-widest uppercase">Tumbuhan Obat</span>{" "}
                 dan <span className="tracking-widest uppercase">Simplisia</span>
             </LinkCard>
