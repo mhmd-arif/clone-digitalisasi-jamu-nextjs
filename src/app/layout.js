@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${lora.variable} ${inter.variable}`}>
-                <DefaultLayout>{children}</DefaultLayout>
+                <DefaultLayout theme="dark">{children}</DefaultLayout>
             </body>
         </html>
     );

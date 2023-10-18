@@ -3,22 +3,19 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="w-10/12 h-full mx-auto grid place-items-center">
+        <div className=" w-11/12 h-full mx-auto grid place-items-center">
             <Image
-                src="/Artemisia.png"
-                width={1800}
-                height={1800}
-                alt="Picture of artemisia"
-                className="absolute -bottom-3/4 -left-96 select-none pointer-events-none"
+                src="/hero-bg.png"
+                width={1920}
+                height={1080}
+                className="pointer-events-none h-screen w-screen absolute z-0 object-cover brightness-50"
             />
-            <div
-                className="text-center max-w-3xl bg-white py-16 px-12 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-100 
-"
-            >
-                <h1 className="inline-block text-h2 font-serif font-bold uppercase tracking-widest mb-6 highlighted">
+
+            <div className="relative text-leaf-100 text-center max-w-4xl font-white py-16 px-12 rounded-3xl">
+                <h1 className="inline-block text-[5rem] mb-6 font-jawa">
                     Literasi Jamu Digital
                 </h1>
-                <p className="mb-8">
+                <p className="mb-8 font-sans text-lg text-leaf-200">
                     Temukan kekayaan tumbuhan obat dan simplisia dalam monografi
                     multimedia lengkap, jelajahi naskah kuno yang menyimpan
                     rahasia pengobatan tradisional, dan saksikan proses autentik
@@ -26,13 +23,6 @@ export default function Home() {
                 </p>
                 <Button>Telusuri Sekarang</Button>
             </div>
-            <Image
-                src="/Basil.png"
-                width={1800}
-                height={1800}
-                alt="Picture of artemisia"
-                className="absolute -bottom-3/4 left-1/3 select-none pointer-events-none"
-            />
         </div>
     );
 }
