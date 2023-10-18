@@ -6,10 +6,11 @@ export default function Card({ children, href, img = "img", title = "title", sub
         <Link href={href}>
             <div className={className}>
                 <div className="flex h-40 bg-earth-200 rounded-lg justify-center items-center">
-                    {img}
+                    <img src={img} alt="gambar" />
+
                 </div>
                 <div className="flex flex-col pl-4 pt-2 font-sans">
-                    <div className="font-bold text-xl">{title}</div>
+                    <div className="font-bold text-lg">{title}</div>
                     <div className="mt-[-10px] text-base">{subtitle}</div>
                 </div>
             </div>
