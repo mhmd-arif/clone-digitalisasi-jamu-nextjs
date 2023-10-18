@@ -23,6 +23,7 @@ module.exports = {
             fontFamily: {
                 sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
                 serif: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
+                jawa: "Laraboyok",
             },
             colors: {
                 earth: {
@@ -36,6 +37,7 @@ module.exports = {
                     700: "#776757",
                     800: "#62554A",
                     900: "#50463E",
+                    950: "#2A2420",
                 },
                 leaf: {
                     50: "#F8F8F8",
@@ -48,6 +50,7 @@ module.exports = {
                     700: "#4A5342",
                     800: "#3D4437",
                     900: "#33392E",
+                    950: "#191D16",
                 },
             },
             backgroundImage: {
