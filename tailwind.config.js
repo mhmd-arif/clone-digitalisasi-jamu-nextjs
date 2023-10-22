@@ -21,8 +21,8 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-                serif: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
+                sans: ["Inter", ...defaultTheme.fontFamily.sans],
+                serif: ["Lora", ...defaultTheme.fontFamily.serif],
                 jawa: "Laraboyok",
             },
             colors: {
