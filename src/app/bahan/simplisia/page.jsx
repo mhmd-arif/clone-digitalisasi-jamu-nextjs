@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "@/components/Card";
 import Link from "next/link";
+import Back from "@/components/Back";
 
 export default function Simplisia() {
   const cardData = [
@@ -43,31 +44,38 @@ export default function Simplisia() {
   ];
 
   return (
-    <div className="w-10/12 h-full mx-auto flex flex-col items-center gap-6 font-serif">
-      <span className="self-start text-base"> home/bahan/simplisia</span>
-      <div className="flex gap-x-2">
-        <Link href="/bahan/tumbuhan-obat">
-          <span className="text-h3 text-leaf-900 font-bold pt-4">
-            Tumbuhan Obat
-          </span>
-        </Link>
-        <Link href="/bahan/simplisia">
-          <span className="text-h3 text-leaf-900 font-bold pt-4">
-            Simplisia
-          </span>
-        </Link>
-      </div>
+    <div className="py-24 max-w-7xl mx-auto ">
+      <Back />
+      <div className="flex flex-col items-center gap-6 font-serif">
+        <div className="flex gap-x-8 text-earth-300 font-bold pt-4 justify-center items-center border-b-[1px] ">
+          <Link
+            href="/bahan/tumbuhan-obat"
+            className="flex flex-col hover:scale-105 transform duration-300 ease-out text-h3 text-earth-50"
+          >
+            <span>Tumbuhan Obat</span>
+          </Link>
 
-      <div className="grid grid-cols-4 text-xl text-earth-50 gap-6 w-full">
-        {cardData.map((card, index) => (
-          <Card
-            key={index}
-            href={card.href}
-            title={card.title}
-            subtitle={card.subtitle}
-            img={card.img}
-          ></Card>
-        ))}
+          <Link
+            href="/bahan/simplisia"
+            className="flex flex-col hover:scale-105 transform duration-300 ease-out text-h3"
+          >
+            <span className="underline underline-offset-[10px] decoration-4">
+              Simplisia
+            </span>
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-4 text-xl text-earth-50 gap-6 w-full">
+          {cardData.map((card, index) => (
+            <Card
+              key={index}
+              href={card.href}
+              title={card.title}
+              subtitle={card.subtitle}
+              img={card.img}
+            ></Card>
+          ))}
+        </div>
       </div>
     </div>
   );
