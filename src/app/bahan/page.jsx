@@ -1,43 +1,57 @@
 import React from "react";
 import Link from "next/link";
-import Card from "@/components/Card";
+import Back from "@/components/Back";
+import Image from "next/image";
 
 export default function Bahan() {
-    const cardData = [
-        {
-            href: "/bahan/tumbuhanobat",
-            content: "Tumbuhan Obat",
-            className: "flex h-[60vh] w-[50vh] bg-leaf-700 rounded-xl justify-center items-center hover:scale-105 transform duration-300 ease-out"
-        },
-        {
-            href: "/bahan/simplisia",
-            content: "Simplisia",
-            className: "flex h-[60vh] w-[50vh] bg-leaf-700 rounded-xl justify-center items-center hover:scale-105 transform duration-300 ease-out"
-        },
-    ];
+  return (
+    <div className="max-w-7xl text-white mx-auto pt-24 h-screen ">
+      <Back />
+      <h1 className="mb-8 font-serif text-earth-200 text-center text-h2 tracking-widest uppercase">
+        Tumbuhan Obat & Simplisia
+      </h1>
 
-    return (
-        <div className="w-10/12 mx-auto flex flex-col items-center gap-6 font-serif">
-            <span className="text-h3 text-leaf-900 font-bold pt-4">Tumbuhan Obat & Simplisia</span>
-            <div className="flex flex-row justify-center gap-16 text-h2 text-earth-50">
-                <Link href="/bahan/tumbuhanobat">
-                    <div className="flex h-[60vh] w-[50vh] bg-leaf-700 rounded-xl justify-center items-center hover:scale-105 transform duration-300 ease-out">
-                        Tumbuhan Obat
-                    </div>
-                </Link>
-                <Link href="/bahan/simplisia">
-                    <div className="flex h-[60vh] w-[50vh] bg-leaf-700 rounded-xl justify-center items-center hover:scale-105 transform duration-300 ease-out">
-                        Simplisia
-                    </div>
-                </Link>
-
-                {/* {cardData.map((card, index) => (
-                    <Card key={index} href={card.href} className={card.className}>
-                        {card.content}
-                    </Card>
-                ))} */}
-            </div>
-
+      <div className="flex items-center font-serif">
+        <div className="flex flex-row justify-center gap-16 py-4 px-32 w-screen text-h2 gap- overflow-hidden text-earth-50 ">
+          <LinkCard
+            href={"/bahan/tumbuhan-obat"}
+            src={"/menu/simplisia.png"}
+            title={"Tumbuhan Obat"}
+            desc={
+              "Tumbuhan obat adalah tanaman yang digunakan secara tradisional atau medis untuk tujuan pengobatan."
+            }
+          >
+            {/* <span className="tracking-widest uppercase">Tumbuhan Obat</span> */}
+          </LinkCard>
+          <LinkCard
+            href={"/bahan/simplisia"}
+            src={"/menu/jamu.png"}
+            title={"Simplisia"}
+            desc={
+              "Simplisia adalah istilah dalam farmasi yang merujuk pada bahan baku tumbuhan atau hewan yang digunakan dalam pembuatan obat."
+            }
+          >
+            {/* <span className="tracking-widest uppercase">Simplisia</span> */}
+          </LinkCard>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
+
+const LinkCard = ({ href, src, title, desc, children }) => {
+  return (
+    <Link
+      href={href}
+      className="group hover:-translate-y-5 transform duration-300 ease-out transition-all relative bg-black px-12 w-1/2 h-full w-[400px] h-[500px] rounded-2xl overflow-hidden text-stone-100 grid place-items-center "
+    >
+      <Image src={src} fill objectFit="cover" className="brightness-[0.9]" />
+      <div className="group-hover:-translate-y-3 transition-all relative text-h2 text-center text-leaf-100 font-serif">
+        <div className="grid grid-rows-2 h-96 gap-8 justify-center item-center">
+          <h2 className="text-h2 self-end"> {title} </h2>
+          <p className="text-lg">{desc}</p>
+        </div>
+      </div>
+    </Link>
+  );
+};
