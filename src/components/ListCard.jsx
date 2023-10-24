@@ -16,6 +16,7 @@ export default function ListCard({ data }) {
           width={220}
           height={220}
           className="w-full group-hover:-translate-y-1 transition object-cover aspect-video rounded-lg"
+          alt="gambar"
         />
         <div className="">
           <h3

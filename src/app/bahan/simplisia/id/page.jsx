@@ -59,6 +59,7 @@ export default function DetailTumbuhanObat() {
             width={1000}
             height={1000}
             className="sticky top-40 bg-earth-300 rounded-xl"
+            alt="gambar simplisia"
           />
         </div>
         <div className="w-3/5 flex flex-col gap-4">

@@ -54,6 +54,7 @@ export default function Jamu() {
             width={1000}
             height={1000}
             className="sticky top-40 bg-earth-300 rounded-xl"
+            alt="gambar jamu"
           />
         </div>
         <div className="w-3/5 flex flex-col gap-4">
@@ -112,6 +113,7 @@ const VideoCard = ({ title, description, id }) => {
         width={130}
         height={100}
         style={{ aspectRatio: "16/9", objectFit: "cover" }}
+        alt="gambar jamu"
       />
       <div className="">
         <h3 className="font-serif text-xs mb-4 text-earth-400">{title}</h3>
