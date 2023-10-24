@@ -4,7 +4,7 @@ import React from "react";
 
 export default function DetailNaskahKuno() {
     return (
-        <div className="max-w-7xl text-white mx-auto py-24">
+        <div className="px-24 w-full text-white mx-auto py-24">
             <Back />
             <div className="text-center mb-16">
                 <h1 className="text-h2 font-serif text-earth-200">Jejamuan</h1>
@@ -22,10 +22,10 @@ export default function DetailNaskahKuno() {
                     />
                 </div>
                 <div className="">
-                    <h3 className="text-earth-500 font-serif tracking-widest uppercase mb-4">
+                    <h3 className="text-earth-500 font-serif tracking-widest uppercase mb-8">
                         Terjemahan Bahasa Jawa
                     </h3>
-                    <div className="text-earth-300 flex flex-col gap-2 text-base italic">
+                    <div className="text-earth-300 flex flex-col gap-4 text-base italic">
                         <p>
                             Wong Jawa wis teka jamu minangka bagian saka tradisi
                             kanggo ngobati ragane. Jamune saiki wis iso
@@ -58,10 +58,10 @@ export default function DetailNaskahKuno() {
                     </div>
                 </div>
                 <div className="">
-                    <h3 className="text-earth-500 font-serif tracking-widest uppercase mb-4">
+                    <h3 className="text-earth-500 font-serif tracking-widest uppercase mb-8">
                         Terjemahan Bahasa Indonesia
                     </h3>
-                    <div className="text-earth-300 flex flex-col gap-2 text-base">
+                    <div className="text-earth-300 flex flex-col gap-4 text-base">
                         <p>
                             Orang Jawa telah lama menggunakan jamu sebagai
                             bagian dari tradisi untuk mengobati tubuh mereka.
