@@ -1,37 +1,42 @@
 import Back from "@/components/Back";
+import ListCard from "@/components/ListCard";
 import Image from "next/image";
 import React from "react";
-import ListCard from "../ListCard";
 
 export default function Jamu() {
   const data = {
     jamu: [
       {
         src: "/menu/jamu.png",
+        href: "/jamu/id",
         title: "Beras Kencur",
         description:
           "Minuman herbal yang mengandung kencur dan beras, membantu meredakan masalah perut dan memberikan energi",
       },
       {
         src: "/menu/jamu.png",
+        href: "/jamu/id",
         title: "Temulawak",
         description:
           "Jamu dengan temulawak sebagai bahan utama, memiliki sifat antiinflamasi dan memperkuat sistem kekebalan tubuh",
       },
       {
         src: "/menu/jamu.png",
+        href: "/jamu/id",
         title: "Jahe Merah",
         description:
           "Jahe merah yang berkhasiat dalam menjaga kesehatan jantung dan meningkatkan sirkulasi darah",
       },
       {
         src: "/menu/jamu.png",
+        href: "/jamu/id",
         title: "Sirih Daun Betel",
         description:
           "Kombinasi sirih dan daun betel, digunakan untuk penyegaran napas dan menjaga kesehatan mulut",
       },
       {
         src: "/menu/jamu.png",
+        href: "/jamu/id",
         title: "Beras Kencur",
         description:
           "Minuman herbal yang mengandung kencur dan beras, membantu meredakan masalah perut dan memberikan energi",

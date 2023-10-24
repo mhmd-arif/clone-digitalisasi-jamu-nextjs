@@ -3,12 +3,12 @@ import Link from "next/link";
 import React from "react";
 
 export default function ListCard({ data }) {
-  const { title, description, src } = data;
+  const { title, description, src, href } = data;
 
   return (
     <>
       <Link
-        href={`/jamu/id`}
+        href={href}
         className="group w-full flex flex-col items-center gap-4"
       >
         <Image
