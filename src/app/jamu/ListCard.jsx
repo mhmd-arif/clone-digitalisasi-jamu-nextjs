@@ -8,7 +8,7 @@ export default function ListCard({ data }) {
   return (
     <>
       <Link
-        href={`/bahan/id`}
+        href={`/jamu/id`}
         className="group w-full flex flex-col items-center gap-4"
       >
         <Image

@@ -45,9 +45,12 @@ export default function Jamu() {
   };
 
   return (
-    <div className="w-full p-24">
+    <div className="max-w-7xl py-24 mx-auto">
       <Back />
-      <div className="grid grid-cols-4 gap-12 py-12">
+      <h1 className="text-h2 text-center font-serif tracking-widest uppercase mb-8">
+        Jamu
+      </h1>
+      <div className="grid grid-cols-4 gap-12 py-6">
         <ListCard data={data.jamu[0]} />
         <ListCard data={data.jamu[1]} />
         <ListCard data={data.jamu[2]} />
