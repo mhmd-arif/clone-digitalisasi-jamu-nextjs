@@ -61,12 +61,12 @@ export default function DetailTumbuhanObat() {
                         className="sticky top-40 bg-earth-300 rounded-xl"
                     />
                 </div>
-                <div className="w-3/5 flex flex-col gap-5">
+                <div className="w-3/5 flex flex-col gap-4">
                     <div className="flex flex-row">
-                        <h1 className="text-h2 font-serif text-earth-200">
+                        <h1 className="text-h2 font-serif text-earth-200 font-bold">
                             Uci-uci
-                            <span className="text-sm italic text-earth-500 font-serif pl-6">
-                                (Basella alba L.)
+                            <span className="text-base italic text-earth-500 font-serif pl-6 tracking-widest font-normal">
+                                Basella alba L.
                             </span>
                         </h1>
                     </div>
