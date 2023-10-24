@@ -49,6 +49,7 @@ const LinkCard = ({ href, src, children }) => {
                 fill
                 objectFit="cover"
                 className="brightness-[0.9]"
+                alt="cover-img"
             />
             <div className="group-hover:-translate-y-3 transition-all relative text-h2 text-center text-leaf-100 font-serif">
                 {children}
