@@ -5,35 +5,29 @@ import Image from "next/image";
 
 export default function Bahan() {
   return (
-    <div className="max-w-7xl text-white mx-auto pt-24 h-screen ">
+    <div className="max-w-7xl text-white mx-auto pt-24">
       <Back />
-      <h1 className="mb-8 font-serif text-earth-200 text-center text-h2 tracking-widest uppercase">
+      <h1 className="my-2 font-serif text-earth-200 text-center text-h2 tracking-widest uppercase">
         Tumbuhan Obat & Simplisia
       </h1>
 
-      <div className="flex items-center font-serif">
-        <div className="flex flex-row justify-center gap-16 py-4 px-32 w-screen text-h2 gap- overflow-hidden text-earth-50 ">
-          <LinkCard
-            href={"/bahan/tumbuhan-obat"}
-            src={"/menu/simplisia.png"}
-            title={"Tumbuhan Obat"}
-            desc={
-              "Tumbuhan obat adalah tanaman yang digunakan secara tradisional atau medis untuk tujuan pengobatan."
-            }
-          >
-            {/* <span className="tracking-widest uppercase">Tumbuhan Obat</span> */}
-          </LinkCard>
-          <LinkCard
-            href={"/bahan/simplisia"}
-            src={"/menu/jamu.png"}
-            title={"Simplisia"}
-            desc={
-              "Simplisia adalah istilah dalam farmasi yang merujuk pada bahan baku tumbuhan atau hewan yang digunakan dalam pembuatan obat."
-            }
-          >
-            {/* <span className="tracking-widest uppercase">Simplisia</span> */}
-          </LinkCard>
-        </div>
+      <div className="py-16 px-16 flex items-center justify-center gap-8 overflow-hidden ">
+        <LinkCard
+          href={"/bahan/tumbuhan-obat"}
+          src={"/menu/simplisia.png"}
+          title={"Tumbuhan Obat"}
+          desc={
+            "Tumbuhan obat adalah tanaman yang digunakan secara tradisional atau medis untuk tujuan pengobatan."
+          }
+        ></LinkCard>
+        <LinkCard
+          href={"/bahan/simplisia"}
+          src={"/menu/jamu.png"}
+          title={"Simplisia"}
+          desc={
+            "Simplisia adalah istilah yang merujuk pada bahan baku tumbuhan atau hewan yang digunakan dalam pembuatan obat."
+          }
+        ></LinkCard>
       </div>
     </div>
   );
@@ -43,13 +37,19 @@ const LinkCard = ({ href, src, title, desc, children }) => {
   return (
     <Link
       href={href}
-      className="group hover:-translate-y-5 transform duration-300 ease-out transition-all relative bg-black px-12 w-1/2 h-full w-[400px] h-[500px] rounded-2xl overflow-hidden text-stone-100 grid place-items-center "
+      className="grid place-items-center group hover:-translate-y-5 transform duration-300 ease-out transition-all relative px-12 w-[25rem] h-[40rem] rounded-2xl overflow-hidden text-stone-100  "
     >
-      <Image src={src} fill objectFit="cover" className="brightness-[0.9]" />
+      <Image
+        src={src}
+        fill
+        objectFit="cover"
+        className="brightness-[0.7]"
+        alt="cover category"
+      />
       <div className="group-hover:-translate-y-3 transition-all relative text-h2 text-center text-leaf-100 font-serif">
-        <div className="grid grid-rows-2 h-96 gap-8 justify-center item-center">
+        <div className="grid grid-rows-2 place-items-center h-[40rem]">
           <h2 className="text-h2 self-end"> {title} </h2>
-          <p className="text-lg">{desc}</p>
+          <p className="text-lg self-start pt-[8rem]">{desc}</p>
         </div>
       </div>
     </Link>
