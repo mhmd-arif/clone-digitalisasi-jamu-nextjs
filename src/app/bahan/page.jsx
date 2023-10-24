@@ -7,11 +7,8 @@ export default function Bahan() {
   return (
     <div className="max-w-7xl text-white mx-auto pt-24">
       <Back />
-      <h1 className="my-2 font-serif text-earth-200 text-center text-h2 tracking-widest uppercase">
-        Tumbuhan Obat & Simplisia
-      </h1>
 
-      <div className="py-16 px-16 flex items-center justify-center gap-8 overflow-hidden ">
+      <div className="py-20 px-16 flex items-center justify-center gap-8 overflow-hidden ">
         <LinkCard
           href={"/bahan/tumbuhan-obat"}
           src={"/menu/simplisia.png"}
@@ -37,7 +34,7 @@ const LinkCard = ({ href, src, title, desc, children }) => {
   return (
     <Link
       href={href}
-      className="grid place-items-center group hover:-translate-y-5 transform duration-300 ease-out transition-all relative px-12 w-[25rem] h-[40rem] rounded-2xl overflow-hidden text-stone-100  "
+      className="grid place-items-center group hover:-translate-y-5 transform duration-300 ease-out transition-all relative px-12 w-[30rem] h-[42rem] rounded-2xl overflow-hidden text-stone-100  "
     >
       <Image
         src={src}
@@ -48,8 +45,8 @@ const LinkCard = ({ href, src, title, desc, children }) => {
       />
       <div className="group-hover:-translate-y-3 transition-all relative text-h2 text-center text-leaf-100 font-serif">
         <div className="grid grid-rows-2 place-items-center h-[40rem]">
-          <h2 className="text-h2 self-end"> {title} </h2>
-          <p className="text-lg self-start pt-[8rem]">{desc}</p>
+          <h2 className="text-h1 self-end"> {title} </h2>
+          <p className="text-xl self-start pt-[8rem]">{desc}</p>
         </div>
       </div>
     </Link>
