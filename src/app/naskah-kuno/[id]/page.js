@@ -19,6 +19,7 @@ export default function DetailNaskahKuno() {
                         width={500}
                         height={1000}
                         className="sticky top-16"
+                        alt="potongan naskah kuno"
                     />
                 </div>
                 <div className="">
@@ -53,7 +54,7 @@ export default function DetailNaskahKuno() {
                             soko jamu tradisional. Dene ora kabeh jamu iso
                             ditemtokake nggunakake berbagai rasa, saka manis,
                             pedas, saji, lan nutupi saget manawa kita bisa
-                            nikmati jamu kanthi bebas lan gampang."
+                            nikmati jamu kanthi bebas lan gampang.
                         </p>
                     </div>
                 </div>

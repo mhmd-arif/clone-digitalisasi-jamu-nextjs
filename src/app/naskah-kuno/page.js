@@ -11,15 +11,12 @@ export default function NaskahKuno() {
                 Naskah Kuno
             </h1>
             <div className="flex flex-col gap-12">
-                <RamuanLink ramuan="Jamu" sumber="Surat Centhini hlm. 5" />
-                <RamuanLink ramuan="Kawista" sumber="Surat Centhini hlm. 5" />
-                <RamuanLink
-                    ramuan="Kencur"
-                    sumber="Carita Parahyangan hlm. 7"
-                />
+                <RamuanLink ramuan="Jamu" sumber="Serat Centhini hlm. 5" />
+                <RamuanLink ramuan="Kawista" sumber="Serat Centhini hlm. 32" />
+                <RamuanLink ramuan="Kencur" sumber="Serat Centhini hlm. 7" />
                 <RamuanLink
                     ramuan="Temulawak"
-                    sumber="Surat Centhini hlm. 11"
+                    sumber="Serat Centhini hlm. 11"
                 />
             </div>
         </div>

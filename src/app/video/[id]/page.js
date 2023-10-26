@@ -74,6 +74,7 @@ const VideoCard = ({ title, description, id }) => {
                 src={`https://img.youtube.com/vi/${id}/0.jpg`}
                 width={130}
                 height={100}
+                alt=""
                 style={{ aspectRatio: "16/9", objectFit: "cover" }}
             />
             <div className="">

@@ -13,6 +13,7 @@ export default function VideoCard({ data, isPriority = false, isCol = false }) {
                         src={`https://img.youtube.com/vi/${id}/0.jpg`}
                         width={1000}
                         height={500}
+                        alt=""
                         className="object-cover aspect-video rounded-lg transition group-hover:-translate-y-1"
                     />
                     <div className="">
@@ -35,6 +36,7 @@ export default function VideoCard({ data, isPriority = false, isCol = false }) {
                         src={`https://img.youtube.com/vi/${id}/0.jpg`}
                         width={220}
                         height={220}
+                        alt=""
                         className={`${
                             isCol ? "w-full" : ""
                         } group-hover:-translate-y-1 transition object-cover aspect-video rounded-lg`}

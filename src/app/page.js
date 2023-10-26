@@ -6,6 +6,7 @@ export default function Home() {
     return (
         <div className="w-11/12 h-screen mx-auto grid place-items-center">
             <Image
+                alt=""
                 src="/hero-bg.png"
                 width={1920}
                 height={1080}

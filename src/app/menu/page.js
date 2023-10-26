@@ -6,17 +6,30 @@ export default function Menu() {
     return (
         <div className="bg-leaf-950 py-32 pb-12 px-16 w-screen h-screen flex items-center gap-4 overflow-hidden">
             <LinkCard href={"/bahan"} src={"/menu/simplisia.png"}>
-                <span className="tracking-widest uppercase">Tumbuhan Obat</span>{" "}
-                dan <span className="tracking-widest uppercase">Simplisia</span>
+                <span className="font-semibold text-earth-100">
+                    <span className="tracking-widest uppercase">
+                        Tumbuhan Obat
+                    </span>{" "}
+                    dan{" "}
+                    <span className="tracking-widest  uppercase">
+                        Simplisia
+                    </span>
+                </span>
             </LinkCard>
             <LinkCard href={"/naskah-kuno"} src={"/menu/naskah-kuno.png"}>
-                <span className="tracking-widest uppercase">Naskah Kuno</span>
+                <span className="tracking-widest font-semibold text-earth-100 uppercase">
+                    Naskah Kuno
+                </span>
             </LinkCard>
             <LinkCard href={"/jamu"} src={"/menu/jamu.png"}>
-                <span className="tracking-widest uppercase">Jamu</span>
+                <span className="tracking-widest font-semibold text-earth-100 uppercase">
+                    Jamu
+                </span>
             </LinkCard>
             <LinkCard href={"/video"} src={"/menu/video.png"}>
-                <span className="tracking-widest uppercase">Video</span>
+                <span className="tracking-widest font-semibold text-earth-100 uppercase">
+                    Video
+                </span>
             </LinkCard>
             {/* <Link
                 href={"/"}
