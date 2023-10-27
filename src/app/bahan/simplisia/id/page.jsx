@@ -7,43 +7,43 @@ export default function DetailTumbuhanObat() {
   const cardData = [
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat1",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 1",
       subtitle: "nama latin tumbuhan obat 1",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat2",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 2",
       subtitle: "nama latin tumbuhan obat 2",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat3",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 3",
       subtitle: "nama latin tumbuhan obat 3",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat4",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 4",
       subtitle: "nama latin tumbuhan obat 4",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat5",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 5",
       subtitle: "nama latin tumbuhan obat 5",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat6",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 6",
       subtitle: "nama latin tumbuhan obat 6",
     },
     {
       href: "/bahan/tumbuhanobat/tumbuhanobat7",
-      img: "https://i.postimg.cc/BQPvwSh5/ginger-2022-12-15-21-43-47-utc-transformed-1.png",
+      img: "/menu/simplisia.png",
       title: "tumbuhan obat 7",
       subtitle: "nama latin tumbuhan obat 7",
     },
@@ -55,7 +55,7 @@ export default function DetailTumbuhanObat() {
       <div className="flex flex-row justify-center gap-10 my-10">
         <div className="w-2/5">
           <Image
-            src={"/Basil.png"}
+            src={"/menu/simplisia.png"}
             width={1000}
             height={1000}
             className="sticky top-40 bg-earth-300 rounded-xl"
@@ -65,7 +65,7 @@ export default function DetailTumbuhanObat() {
         <div className="w-3/5 flex flex-col gap-4">
           <div className="flex flex-row">
             <h1 className="text-h2 font-serif text-earth-200 font-bold">
-              Uci-uci
+              Kunyit Asam
               <span className="text-base italic text-earth-500 font-serif pl-6 tracking-widest font-normal">
                 Basella alba L.
               </span>
